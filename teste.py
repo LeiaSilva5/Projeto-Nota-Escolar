@@ -18,7 +18,7 @@
 
 numero = float(input('Digite um número : '))
 
-if 0 < numero <=  10 :
-    print('Numero está entre zero e 10')
+if 0 < numero <= 10 :
+    print('Numero está entre 0 e 10')
 else:
     print('Esse numero está fora do range')

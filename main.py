@@ -1,8 +1,14 @@
 # Projeto Nota Escolar
 # Funoes do sistema f
+def verificar_numero(num):
+    if 0 < num < 10:
+        return True
+    else:
+        return False
+
 def cadastro_aluno(quant,lista):
 
-    i = 0
+    
     for i in range(quant):
         nome = input('Digite o nome do aluno: ').upper()
         if nome.isalpha():
@@ -19,10 +25,11 @@ def cadastro_aluno(quant,lista):
         else:
             print('Digite um nome valido')
             continue
-    return lista
+        
+        return lista
 
 # Código principal
 lista_alunos = []
 print('Sistema de Notas Escolares')
-quantidade = int(input('Digite a quantidade de alunos: '))
+quantidade = int(input('Digite a quantidade de alunos: ')) 
 print(cadastro_aluno(quantidade,lista_alunos))
